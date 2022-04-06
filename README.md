@@ -1,1 +1,3 @@
-# mastodonhka
+# BulletinBOT
+
+## installation
