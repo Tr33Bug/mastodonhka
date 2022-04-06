@@ -1,5 +1,6 @@
 # ignore config with Token
 config.py
+botLog.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
