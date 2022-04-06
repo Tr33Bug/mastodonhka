@@ -26,6 +26,12 @@ SLEEPTIME = 5
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
 LOGFILE = 'botLog.txt'
 
+
+logfile = open(LOGFILE, 'a')
+logfile.write("Hello World")
+logfile.close()
+
+
 # Servertimezone = UTC
 # Sommerzeit = 2
 # Winterzeit = 1
