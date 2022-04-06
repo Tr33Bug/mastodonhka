@@ -72,9 +72,21 @@ sudo systemctl enable bulletinBot.service
 sudo systemctl start bulletinBot.service
 ```
 
-9. finish, check status
+9. check status
 ```bash
 sudo systemctl status bulletinBot.service
 ```
-in depth tutorial: https://medium.com/codex/setup-a-python-script-as-a-service-through-systemctl-systemd-f0cc55a42267
-more help on systemd: https://wiki.archlinux.org/title/Systemd
+
+10. finish
+- in depth tutorial: https://medium.com/codex/setup-a-python-script-as-a-service-through-systemctl-systemd-f0cc55a42267
+- more help on systemd: https://wiki.archlinux.org/title/Systemd
+
+## debugging
+the logs from the bulletinBot.py are in the home from root in the *botLog.txt*
+```bash
+sudo -i
+cd ~
+cat botLog.txt
+# or 
+cat -f botLog.txt
+```
