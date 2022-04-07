@@ -17,6 +17,7 @@ from config import MASTODON_TOKEN, LOGFILE
 
 SLEEPTIME = 5
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
+#LOGFILE = 'botLog.txt'
 LOGFILE += 'botLog.txt'
 
 
