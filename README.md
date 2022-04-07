@@ -88,5 +88,5 @@ sudo -i
 cd ~
 cat botLog.txt
 # or 
-cat -f botLog.txt
+tail -f botLog.txt
 ```
