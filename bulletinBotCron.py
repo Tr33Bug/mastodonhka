@@ -9,22 +9,15 @@ from datetime import datetime, timedelta
 import os
 
 # import token from config.py
-from config import MASTODON_TOKEN
+from config import MASTODON_TOKEN, LOGFILE
 
 ### Mastodon BOT to post content from newsbulletinboard from Hochschule Karlsruhe on projekt-mastodon.h-ka-iwi.de ###
 ### Author: Henrik Wiegand
 
-##SETUP##
-# sudo systemctl stop bulletinBot.service
-# sudo systemctl daemon-reload
-# sudo systemctl start bulletinBot.service
-##CHECK STATUS##
-# sudo systemctl status bulletinBot.service
-# --> Active: active (running)
 
 SLEEPTIME = 5
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
-LOGFILE = 'botLog.txt'
+LOGFILE = '/home/ubuntu/mastodonhka/botLog.txt'
 
 
 logfile = open(LOGFILE, 'a')
