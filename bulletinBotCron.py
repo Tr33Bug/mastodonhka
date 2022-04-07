@@ -17,7 +17,7 @@ from config import MASTODON_TOKEN, LOGFILE
 
 SLEEPTIME = 5
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
-LOGFILE = '/home/ubuntu/mastodonhka/botLog.txt'
+LOGFILE += 'botLog.txt'
 
 
 logfile = open(LOGFILE, 'a')
