@@ -99,7 +99,7 @@ for docs in news:
 
         # get hashtags for course and combine them
         for course in docs['courseOfStudies']:
-            hashtags += '#' + course + ','
+            hashtags += '#' + course + ' '
         
         # concatinate post content with shorted postContend and hashtags
         statusMessage = docs['title'] + '\n' + docs['subTitle'] + '\n' + shorten(docs['content']) + '\nLG ' + docs['nameOwner'] + '\n' + hashtags + '\n' + '#' + docs['type']
