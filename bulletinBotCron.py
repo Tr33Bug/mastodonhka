@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-from ctypes import resize
 from multiprocessing.spawn import old_main_modules
 import os
 from urllib import response
 import requests
-import time
 from datetime import datetime, timedelta
 import os
 
 # import token from config.py
-from config import MASTODON_TOKEN, LOGFILE
+from config import MASTODON_TOKEN, LOGFILE, SLEEPTIME
 
 ### Mastodon BOT to post content from newsbulletinboard from Hochschule Karlsruhe on projekt-mastodon.h-ka-iwi.de ###
 ### Author: Henrik Wiegand
 
 
-SLEEPTIME = 5
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
 #LOGFILE = 'botLog.txt'
 LOGFILE += 'botLog.txt'
+
 
 
 logfile = open(LOGFILE, 'a')
