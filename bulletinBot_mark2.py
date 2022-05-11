@@ -42,6 +42,7 @@ mastodon = Mastodon(
 def shorten(text):
     text = (text[:700] + '... (Der Text wurde hier gekürzt)') if len(text) > 700 else text
     return text
+    # Optional could chain posts to display all contend
 
 # Delete LOGFILE after approx. one Day
 # Deletes if its size is bigger than SLEEPTIME * Min * Hour * sizeAfterOneRun
@@ -56,8 +57,6 @@ def resetLogFile(LOGFILE):
     else:
         print(file_size)
         file.close()
-
-
 
 
 ####################### Welcome Message for NuwsBulletinBot ####################### 

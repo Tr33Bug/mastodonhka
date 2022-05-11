@@ -13,7 +13,6 @@ from config import MASTODON_TOKEN, LOGFILE, SLEEPTIME
 
 
 AUTHTOKEN_MASTODON = MASTODON_TOKEN
-#LOGFILE = 'botLog.txt'
 LOGFILE += 'botLog.txt'
 
 
@@ -60,19 +59,17 @@ def resetLogFile(LOGFILE):
         print(file_size)
         file.close()
 
-# Welcome Message for NuwsBulletinBot
+####################### Welcome Message for NuwsBulletinBot ####################### 
 print('Starting NewsBulletinBOT!!!\n\n\n')
 
-# Main Bot-Loop
 # define Systemtime
 systemTime = datetime.now() + timedelta(hours=TimeZoneDelta)
 
 # get request from hka API for news
 response = requests.get(hkaUrl, headers=hkaHeaders)
 news = response.json()
-    
 
-
+# go through every message from the API and check if older than 5 min. If true post the message via Mastodon.
 for docs in news:
 
     # open file for Logs
