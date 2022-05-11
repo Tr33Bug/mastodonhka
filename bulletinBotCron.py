@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from multiprocessing.spawn import old_main_modules
 import os
 from urllib import response
 import requests
